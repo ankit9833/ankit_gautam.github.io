@@ -47,15 +47,6 @@ body {
     color: #55b5ee;
 }
 
-.hero {
-    background: linear-gradient(120deg, #14283f, #245477);
-    color: white;
-    padding: 110px 8%;
-    min-height: 430px;
-    display: flex;
-    align-items: center;
-}
-
 .hero-content {
     max-width: 750px;
 }
@@ -221,27 +212,44 @@ footer {
     }
 }
 
+/* Hero section with headshot */
 .hero {
+    background: linear-gradient(120deg, #14283f, #245477);
+    color: white;
+    padding: 80px 8%;
+    min-height: 430px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+    gap: 50px;
 }
 
-.hero-text {
+.hero-content {
     flex: 1;
+    max-width: 750px;
 }
 
 .hero-image {
     flex: 0 0 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .profile-photo {
+    display: block;
     width: 230px;
     height: 230px;
     object-fit: cover;
+    object-position: center top;
     border-radius: 50%;
-    border: 4px solid #e5e7eb;
+    border: 4px solid rgba(255, 255, 255, 0.85);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.hero-text {
+    flex: 1;
 }
 
 /* Mobile layout */
