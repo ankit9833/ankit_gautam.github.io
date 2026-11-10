@@ -191,27 +191,27 @@ footer {
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-    }
-
-    .project-grid,
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
 
     .hero {
-        padding: 75px 8%;
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 60px 8%;
+        gap: 30px;
+    }
+
+    .hero-image {
+        flex: none;
+    }
+
+    .profile-photo {
+        width: 180px;
+        height: 180px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
     }
 }
-
 /* Hero section with headshot */
 .hero {
     background: linear-gradient(120deg, #14283f, #245477);
@@ -250,12 +250,4 @@ footer {
 
 .hero-text {
     flex: 1;
-}
-
-/* Mobile layout */
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
 }
